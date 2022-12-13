@@ -13,6 +13,8 @@ This is a pure PHP library that allows you to encode and decode Bencode data.
 
 ## Installation
 
+The package is being renamed to `arokettu/bencode`
+
 ```bash
 composer require 'sandfoxme/bencode'
 ```
