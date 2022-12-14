@@ -3,7 +3,7 @@
     "description": "BitTorrent's Bencode encoder/decoder",
     "keywords": ["bittorrent", "torrent", "bencode", "serialize"],
     "homepage": "https://sandfox.dev/php/bencode.html",
-    "type": "library",
+    "type": "metapackage",
     "license": "MIT",
     "authors": [
         {
@@ -24,37 +24,7 @@
         },
         "sort-packages": true
     },
-    "autoload": {
-        "psr-4": {
-            "SandFox\\Bencode\\": "src"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "SandFox\\Bencode\\Tests\\": "tests"
-        }
-    },
     "require": {
-        "php": "^8.1",
-        "arokettu/is-resource": "^1.0",
-        "symfony/deprecation-contracts": "^2.1 | ^3.0"
-    },
-    "require-dev": {
-        "ext-gmp": "*",
-        "ext-json": "*",
-        "brick/math": "*",
-        "mikey179/vfsstream": "^1.6.10@alpha",
-        "pear/math_biginteger": "^1.0",
-        "phpunit/phpunit": "^9.4",
-        "psy/psysh": "*",
-        "sandfox.dev/code-standard": "^10@dev",
-        "squizlabs/php_codesniffer": "*",
-        "symfony/phpunit-bridge": "^6.1"
-    },
-    "suggest": {
-        "php-64bit": "Running 64 bit is recommended to prevent integer overflow",
-        "ext-gmp": "In case you need integers larger than your architecture supports",
-        "brick/math": "In case you need integers larger than your architecture supports",
-        "pear/math_biginteger": "In case you need integers larger than your architecture supports"
+        "arokettu/bencode": "^3.1"
     }
 }
